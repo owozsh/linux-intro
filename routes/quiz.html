@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Trabalho 1 - DPW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body class="flex_column_center">
+    <div class="container flex_column_center">
+        <header>
+            <h2>
+                QUIZ
+            </h2>
+            <div class="menu_toggle flex_column_center" onclick="showMenu()">
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+            </div>
+        </header>
+        <div class="content_container quiz flex_column_center">
+            <div id="slider" class="quiz_grid_slider full_size">
+
+                <div class="quiz_start_end flex_column_center full_size">
+                    <div class="flex_column_center">
+                        <hr>
+                        <h2>
+                            Encontre a Distro ideal para você!
+                        </h2>
+                        <hr>
+                    </div>
+                    <img src="../imagens/5.jpg" alt="Imagem Distribuições Linux">
+                    <hr>
+                    <h3>
+                        Este Quiz irá te ajudar a encontrar a Distribuição Linux que mais
+                        atende às suas necessidades
+                    </h3>
+                    <hr>
+                    <div class="quiz_item block flex_column_center" onclick="nextGrid()">Começar!</div>
+                </div>
+                
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Qual dos itens abaixo você considera mais importante?
+                        </h3>
+                        <hr>
+                    </div>
+                    <div onclick="nextGrid(1)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="0" id="A0" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Sistema Moderno/Atualizado
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(2)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="0" id="B0" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Customização
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(3)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="0" id="C0" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Facilidade de Uso
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(4)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="0" id="D0" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Desempenho
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Quando ocorre um problema em seu computador, você:
+                        </h3>
+                        <hr>
+                    </div>
+                    <div onclick="nextGrid(1)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="1" id="A1" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Pesquisa por uma solução
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(2)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="1" id="B1" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Tenta descobrir sozinho como resolver
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(3)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="1" id="C1" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Pede ajuda à alguém
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(4)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="1" id="D1" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Meu único problema é hardware!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Quanto à Interface Gráfica, você prefere:
+                        </h3>
+                        <hr>
+                    </div>
+                    <div onclick="nextGrid(1)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="2" id="A2" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Utilizar o sistema conforme os desenvolvedores pensaram
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(2)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="2" id="B2" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Interface Gráfica para quê? Só preciso do terminal
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(3)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="2" id="C2" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Que o sistema tenha uma identidade visual
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(4)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="2" id="D2" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Só quero que meu computador não trave
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Prefiro que meu computador seja otimizado para:
+                        </h3>
+                        <hr>
+                    </div>
+                    <div onclick="nextGrid(1)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="3" id="A3" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Desenvolvimento
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(2)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="3" id="B3" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Tudo, mesmo que eu precise configurar cada detalhe
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(3)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="3" id="C3" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Fotografia, Edição de Vídeo, Modelagem 3D ou apenas navegar na internet
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(4)" class="quiz_item block flex_column_center">
+                        <input type="radio" name="3" id="D3" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Jogos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Na hora de instalar programas, eu prefiro:
+                        </h3>
+                        <hr>
+                    </div>
+                    <div onclick="nextGrid(1); showResults();" class="quiz_item block flex_column_center">
+                        <input type="radio" name="4" id="A4" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Instalar eles em "containers" para evitar problemas com o sistema
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(2); showResults();" class="quiz_item block flex_column_center">
+                        <input type="radio" name="4" id="B4" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Ter várias opções na hora de instalar e, se possível, prefiro compilar o código fonte 
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(3); showResults();" class="quiz_item block flex_column_center">
+                        <input type="radio" name="4" id="C4" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Instalar os programas através de uma "lojinha de aplicativos"
+                        </div>
+                    </div>
+                    <div onclick="nextGrid(4); showResults();" class="quiz_item block flex_column_center">
+                        <input type="radio" name="4" id="D4" class="full_size">
+                        <div class="quiz_item_contents flex_column_center full_size">
+                            Prefiro que já venha tudo instalado, não pretendo instalar muitas coisas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz_start_end flex_column_center full_size">
+
+                    <div id="fedora" class="content quiz_hide flex_column_center">
+                        <div class="flex_column_center">
+                            <hr>
+                            <h2>
+                                Fedora!
+                            </h2>
+                            <hr>
+                        </div>
+                        <img src="../imagens/fedora.png" alt="Imagem Fedora Linux">
+                        <p>
+                            &emsp;O <a target="_blank" href="https://getfedora.org/">Fedora</a> é uma distribuição desenvolvida pela Red Hat, uma empresa subsidiária da IBM,
+                            por padrão, essa distro entrega versões bem "cruas" das Desktop Environments, sendo as 
+                            mais famosas o Gnome e o KDE Plasma. Além disso, trabalha com o sistema de atualizações
+                            constantes, permitindo ao usuário a utilização das ferramentas na sua versão mais atual. <br>
+                            &emsp;Geralmente, é uma distribuição que entrega diversas inovações, como o Fedora Silverblue,
+                            o novo sistema de arquivos Btrfs, entre outros. Por curiosidade, é a distribuição que
+                            o próprio Linus Torvalds utiliza, a qual entrega uma excelente experiência para desenvolvedores,
+                            especialmente os desenvolvedores Linux. <br>
+                            &emsp;Vale ressaltar que o <a target="_blank" href="https://manjaro.org/">Manjaro</a> também é uma boa alternativa para o seu perfil,
+                            sendo as possíveis maiores diferenças a identidade visual apresentada e algumas
+                            configurações adicionais, porém, caso prefira a experiência pura, melhor ficar com
+                            o Fedora mesmo.
+                        </p>
+                    </div>
+
+                    <div id="arch" class="content quiz_hide flex_column_center">
+                        <div class="flex_column_center">
+                            <hr>
+                            <h2>
+                                Arch Linux!
+                            </h2>
+                            <hr>
+                        </div>
+                        <img src="../imagens/arch.png" alt="Imagem Arch Linux">
+                        <p>
+                            &emsp;O <a target="_blank" href="https://www.archlinux.org/">Arch Linux</a> é uma distribuição que pode assustar à primeira vista, pelo
+                            fato de que instalação do sistema é bem mais manual em relação a outros Sistemas Operacionais. <br>
+                            &emsp;Apesar disso, o Arch é muito querido por sua comunidade, tanto por ter um dos maiores respositórios
+                            da comunidade, o <a target="_blank" href="https://aur.archlinux.org/">AUR</a>, quanto por estar repleto
+                            de possibilidades de customizações e outras possibilidades. <br>
+                            &emsp;Vale a pena dar uma olhada no <a target="_blank" href="https://www.gentoo.org/">Gentoo</a> também.
+                        </p>
+                    </div>
+
+                    <div id="ubuntu" class="content quiz_hide flex_column_center">
+                        <div class="flex_column_center">
+                            <hr>
+                            <h2>
+                                Ubuntu!
+                            </h2>
+                            <hr>
+                        </div>
+                        <img src="../imagens/ubuntu.png" alt="Imagem Ubuntu">
+                        <p>
+                            &emsp;O <a target="_blank" href="https://ubuntu.com/">Ubuntu</a> é considerado uma das distribuições mais populares, possívelmente a mais
+                            utilizada entre os desktops Linux. <br>
+                            &emsp;O Ubuntu em si possui uma identidade visual muito forte, principalmente na época do
+                            <a href="https://en.wikipedia.org/wiki/Unity_(user_interface)">Unity</a>, e, por muito tempo, ditou
+                            algumas regras entre as distribuições. <br>
+                            &emsp;Atualmente o Ubuntu vem perdendo espaço para outras distros, mas, principalmente,
+                            pelas que foram baseadas no próprio, como o <a target="_blank" href="https://pop.system76.com/">Pop OS</a> e o <a target="_blank" href="https://elementary.io/">Elementary OS</a>, os quais, inclusive, talvez sejam
+                            uma melhor opção para os usuários que se encaixam com o seu perfil, portanto, vale a pena conferir!
+                        </p>
+                    </div>
+    
+                    <div id="manjaro" class="content quiz_hide flex_column_center">
+                        <div class="flex_column_center">
+                            <hr>
+                            <h2>
+                                Manjaro!
+                            </h2>
+                            <hr>
+                        </div>
+                        <img src="../imagens/manjaro.png" alt="Imagem Manjaro Linux">
+                        <p>
+                            &emsp;Um Arch Linux simplificado, o <a target="_blank" href="https://manjaro.org/">Manjaro</a> é uma distribuição extremamente rápida, ótima para 
+                            jogos, tanto que, por padrão, ele já vem com a Steam pré-instalada. Para computadores mais
+                            antigos, o recomendado é utilizar a versão XFCE do Manjaro. Talvez seja válido dar uma olhada também no <a target="_blank" href="https://xubuntu.org/">Xubuntu</a> ou o <a target="_blank" href="https://lubuntu.net/">Lubuntu</a>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--- NAVIGATION MENU --->
+
+    <nav class="menu flex_column_center">
+        <ul class="routes_container">
+            <li class="routes">
+                <a class="block" href="../index.html">
+                    INÍCIO
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./historia.html">
+                    HISTÓRIA
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./quiz.html">
+                    QUIZ
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./referencias.html">
+                    REFERÊNCIAS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--- JAVASCRIPT --->
+
+    <script>
+
+        let quiz_scroll = 0, f = 0, a = 0, u = 0, m = 0;
+
+        function showMenu() {
+            let container = document.getElementsByClassName("container")[0];
+            let menu = document.getElementsByClassName("menu")[0];
+            container.classList.add("hide_container");
+            menu.classList.add("show_menu");
+        }
+
+        function nextGrid(group) {
+            let slider = document.getElementById("slider");
+
+            switch(group) {
+                case 1:
+                    f += 1;
+                    break;
+                case 2:
+                    a += 1;
+                    break;
+                case 3:
+                    u += 1;
+                    break;
+                case 4:
+                    m += 1;
+                    break;
+            }
+
+            quiz_scroll += slider.offsetWidth;
+            slider.scroll(quiz_scroll, 0);
+        }
+
+        function showResults() {
+            let fedora = document.getElementById("fedora");
+            let arch = document.getElementById("arch");
+            let ubuntu = document.getElementById("ubuntu");
+            let manjaro = document.getElementById("manjaro");
+
+            console.log(Math.max(f, a, u, m));
+
+            switch(Math.max(f, a, u, m)) {
+                case f:
+                    fedora.classList.add("quiz_show");
+                    console.log("ok");
+                    break;
+                case a:
+                    arch.classList.add("quiz_show");
+                    break;
+                case u:
+                    ubuntu.classList.add("quiz_show");
+                    break;
+                case m:
+                    manjaro.classList.add("quiz_show");
+                    break;
+            }
+
+            console.log("hello");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Trabalho 1 - DPW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body class="flex_column_center">
+    <div class="container flex_column_center">
+        <header>
+            <h2>
+                REFERÊNCIAS
+            </h2>
+            <div class="menu_toggle flex_column_center" onclick="showMenu()">
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+            </div>
+        </header>
+        <div class="content_container">
+            <div class="quiz_grid_slider full_size">
+                <div class="quiz_grid full_size">
+                    <div class="quiz_question flex_column_center">
+                        <hr>
+                        <h3>
+                            Links para saber mais sobre o assunto!
+                        </h3>
+                        <hr>
+                    </div>
+                    <a class="ref_link flex_column_center block" href="https://www.youtube.com/user/Diolinux" target="_blank">Diolinux</a>
+                    <a class="ref_link flex_column_center block" href="https://www.youtube.com/watch?v=Z3f-M43DiD4" target="_blank">Revolution OS - Documentário sobre GNU/Linux</a>
+                    <a class="ref_link flex_column_center block" href="https://www.youtube.com/watch?v=mAFMJ1LnQu8" target="_blank">10 Motivos para Utilizar Linux</a>
+                    <a class="ref_link flex_column_center block" href="https://www.youtube.com/watch?v=o8NPllzkFhE" target="_blank">A Mente por trás do Linux</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- NAVIGATION MENU --->
+
+    <nav class="menu flex_column_center">
+        <ul class="routes_container">
+            <li class="routes">
+                <a class="block" href="../index.html">
+                    INÍCIO
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./historia.html">
+                    HISTÓRIA
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./quiz.html">
+                    QUIZ
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./referencias.html">
+                    REFERÊNCIAS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--- JAVASCRIPT --->
+
+    <script>
+        function showMenu() {
+            let container = document.getElementsByClassName("container")[0];
+            let menu = document.getElementsByClassName("menu")[0];
+            container.classList.add("hide_container");
+            menu.classList.add("show_menu");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Trabalho 1 - DPW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="flex_column_center">
+    <div class="container flex_column_center">
+        <header>
+            <h2>
+                HISTÓRIA
+            </h2>
+            <div class="menu_toggle flex_column_center" onclick="showMenu()">
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+            </div>
+        </header>
+        <div class="content_container flex_column_center ">
+            <div class="title flex_column_center">
+                <hr>
+                <h1>
+                    A Origem do Linux
+                </h1>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    <img src="../imagens/0.jpg" alt="Imagem Linus Torvalds">
+                    &emsp;Em 17 de Setembro de 1991 (<span id="days_remaining"></span>), o kernel Linux foi intrdouzido por Linus Torvalds, na época,
+                    um estudante de Ciência da Computação na Universidade de Helsinki.
+                    O nome Linux, vem da junção de Linus + Unix. Portanto, vale a pena contar um pouco da história do Unix.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    Unix
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    <img src="../imagens/1.png" alt="Imagem Terminal UNIX">
+                    &emsp;Ken Thompson, pesquisador do <a href="https://pt.wikipedia.org/wiki/Multics#:~:text=O%20Multics%20(Multiplexed%20Information%20and,31%20de%20outubro%20de%202000.">Multics</a> (Sistema Operacional famoso na época), trabalhava na empresa Bell Labs, 
+                    que se retirou do projeto após um tempo. Porém, mesmo com a Bell Labs afastada do projeto Multics, Ken Thompson continuou seus estudos no sistema. <br>
+                    &emsp;A idéia era desenvolver um sistema menor, mas que tivesse como base as idéias principais do Multics. Nesse momento nascia o sistema Unix. <br>
+                    &emsp;No ano de 1973 Dennis Ritchie, outro pesquisador da Bell Labs, reescreveu o sistema Unix para a linguagem C que foi desenvolvida por ele mesmo. 
+                    Por esse motivo, o sistema teve maior aceitação por usuários externos à Bell Labs. <br>
+                    &emsp;Comercializado por grandes empresas de tecnologia, o sistema é utilizado até os dias de hoje.
+                    Atualmente, o sistema Unix se encontra na versão “V”.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    Minix, o Antecessor do Linux!
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    &emsp;Como o Unix é comercial, Andrew S. Tanenbaum, autor do livro <a href="https://en.wikipedia.org/wiki/Operating_Systems:_Design_and_Implementation">Operating Systems Design and Implementation</a> criou um sistema baseado no Unix,
+                    porém, com um propósito educacional o qual foi denominhado Minix. <br>
+                     &emsp;O sistema teve seu código fonte liberado para estudantes, possibilitando que eles pudessem criar novos códigos ou entender a fundo o desenvolvimento do sistema. <br>
+                     &emsp;Atualmente o sistema Minix está em sua versão 3.3.0 e utiliza licença BSD. Você pode saber mais sobre o sistema a partir do <a href="https://www.minix3.org/">site oficial</a>.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    O Desenvolvimento do Linux
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    &emsp;No ano de 1991, Linus decidiu desenvolver um sistema mais poderoso que o Minix como um hobby.
+                    Para divulgar a sua idéia, ele enviou uma mensagem para um grupo na <a href="https://pt.wikipedia.org/wiki/Usenet">Usenet</a>.
+                    Neste mesmo ano, Linus Torvalds liberou a versão 0.02 do Kernel e continuou trabalhando até lançar a versão 1.0 em 1994.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    A História do GNU/Linux
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    <img src="../imagens/2.jpg" alt="">
+                    &emsp;O Linux é apenas um Kernel e embora seja a principal parte do sistema, ele ainda não é um sistema operacional completo.
+                    O <a href="https://www.gnu.org/">Projeto GNU</a> tinha como primeiro objetivo criar um sistema operacional composto apenas por software livre que fosse compatível com o Unix.
+                    <a href="https://en.wikipedia.org/wiki/Richard_Stallman">Richard Stallman</a> e vários outros programadores que abraçaram a causa começaram a desenvolver algumas peças fundamentais de um sistema operacional em 1984. <br>
+                    &emsp;Em 1985, a <a href="https://www.fsf.org/">FSF</a> (Free Software Foundation) ajudou a levantar fundos para o projeto GNU. Em 1992 o sistema operacional GNU já estava quase completo, faltando apenas o Kernel.
+                    O projeto vinha desenvolvendo um Kernel chamado de Hurd, porém um estudante finlandês decidiu mudar a licença de seu Kernel para uma licença livre compatível com a GPL do GNU.
+                    O kernel que ficou conhecido como Linux, era capaz de utilizar todas as ferramentas desenvolvidas pelo Projeto GNU e permitiu,
+                    pela primeira vez após o fechamento do código do Unix, que fosse possível rodar um sistema operacional totalmente livre.
+                    Como Linux não é um sistema operacional, mas sim um Kernel, algumas pessoas chamam o sistema de GNU/Linux, enquanto outros abreviaram apenas para Linux.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    Algumas distribuições GNU/Linux famosas
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Lançamento</th>
+                    </tr>
+                    <tr>
+                        <td>Slackware</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>Debian</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>Red Hat Linux</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Suse Linux</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td>Arch Linux</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Gentoo Linux</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Fedora</td>
+                        <td>2003</td>
+                    </tr>
+                    <tr>
+                        <td>Ubuntu</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Deepin</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>CentOS</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Linux Mint</td>
+                        <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td>Zorin OS</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Elementary OS</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>Manjaro</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>Kali Linux</td>
+                        <td>2013</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    A Mascote do Mundo Linux
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    <img src="../imagens/3.png" alt="Imagem TUX">
+                    &emsp;Bem, é impossível pensar em linux e não pensar em um pinguim, certo? Você sabe a história por trás do pinguim mais famoso do mundo? <br>
+                    &emsp;Torvalds chegou a conclusão que seria uma boa ideia encontrar uma mascote para o sistema, tanto em questões visuais quanto comerciais, já que isso poderia se tornar uma febre. <br>
+                    &emsp;Depois de ser mordido por um pinguim durante um passeio na Austrália, Linus admite ter contraído “penguinitis”, uma doença que cria afeto por essas criaturas fofas e adoráveis.
+                    Embora a parte da doença seja uma piada, Linus realmente foi mordido por um pinguim. <br>
+                    &emsp;Após escolher a mascote, era necessário uma imagem certo? A partir da ideia de um pinguim, foi aberto um concurso de logotipos para escolher o pinguim que mais agradasse a Linus Torvalds.
+                    O vencedor do concurso foi Larry Ewing, com seu pinguim sempre gordo e satisfeito. A primeira versão do Tux foi desenhada na versão 0.54 do Programa de Manipulação de Imagens do GNU, o nosso querido <a href="https://www.gimp.org/">GIMP</a>.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    Imagens relacionadas
+                </h3>
+                <hr>
+            </div>
+            <div class="flex_column_center image_slider_container">
+                <i class="material-icons slider_button" onclick="sliderScroll(0)">keyboard_arrow_left</i>
+                <div class="flex_column_center slider">
+                    <div class="slider_img_container">
+                        <img src="../imagens/linux_events30.jpg" alt="Imagem com a linha do tempo dos eventos memoráveis do Linux">
+                    </div>
+                    <div class="slider_img_container">
+                        <img src="../imagens/Screen-Shot-2011-08-19-at-11.31.08.jpg" alt="Captura de tela do Ubuntu 10.04">
+                    </div>
+                    <div class="slider_img_container">
+                        <img src="../imagens/Linus-Torvalds-actualiza-su-PC-con-un-AMD-Ryzen-Threadripper-3970X.jpg" alt="Foto de Linus Torvalds com um">
+                    </div>
+                </div>
+                <i class="material-icons slider_button" onclick="sliderScroll(1)">keyboard_arrow_right</i>
+            </div>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    O Linux Hoje
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    <img src="../imagens/4.png" alt="Imagem GNOME DE">
+                    &emsp;Pode se dizer que Linux é uma febre mundial. O sistema é utilizado em vários servidores, smartphones, tablets e outros dispositivos, incluindo caixas bancários e até mesmo as urnas eletrônicas. <br>
+                    &emsp;Ele foi bastante adotado não apenas em servidores, mas também em vários computadores pessoais, a partir de parcerias com fabricantes de hardware, como a Lenovo, Dell e muitas outras.
+                    Além de bastante usado por empresas para servidores, assumindo a maior fatia do mercado. Várias empresas como a gigante Google, Netflix e até mesmo a NASA, utilizam Linux em seus servidores.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!--- NAVIGATION MENU --->
+
+    <nav class="menu flex_column_center">
+        <ul class="routes_container">
+            <li class="routes">
+                <a class="block" href="../index.html">
+                    INÍCIO
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./historia.html">
+                    HISTÓRIA
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./quiz.html">
+                    QUIZ
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./referencias.html">
+                    REFERÊNCIAS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--- JAVASCRIPT --->
+
+    <script>
+        
+        //______LINUX BIRTHDAY COUNTER
+        const date = new Date, linux_birthday = new Date(2021, 8, 25);
+
+        const days_remaining = Math.round(Math.abs((linux_birthday - date) / (1000*60*60*24)));
+        document.getElementById("days_remaining").innerHTML = " faltam " + days_remaining + " dias até o 30º aniversário do Linux! ";
+        
+        //______MENU
+        function showMenu() {
+            let container = document.getElementsByClassName("container")[0];
+            let menu = document.getElementsByClassName("menu")[0];
+            container.classList.add("hide_container");
+            menu.classList.add("show_menu");
+        }
+
+        //______SLIDER
+        let slider_scroll = 0, number_of_images = 3;
+
+        function sliderScroll(left_right) /* left = 0; right = 1 */ {
+            let slider = document.getElementsByClassName("slider")[0];
+
+            switch(left_right) {
+                case 0: slider_scroll -= (slider_scroll == 0 ? 0 : slider.offsetWidth); break;
+                case 1: slider_scroll += (slider_scroll >= (number_of_images - 1) * slider.offsetWidth ? 0 : slider.offsetWidth); break;
+            }
+
+            slider.scroll(slider_scroll, 0);
+        }
+
+    </script>
+</body>
+</html>

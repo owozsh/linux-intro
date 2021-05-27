@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Trabalho 1 - DPW</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="flex_column_center">
+    <div class="container flex_column_center">
+        <header>
+            <h2 id="titulo">
+                LINUX
+            </h2>
+            <div class="menu_toggle flex_column_center" onclick="showMenu()">
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+                <div class="menu_drawing"></div>
+            </div>
+        </header>
+        <div class="content_container">
+            <div class="banner flex_column_center"></div>
+            <div class="title flex_column_center">
+                <hr>
+                <h1>
+                    Uma Breve Introdução ao Mundo Linux
+                </h1>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    &emsp;LINUX é um <a href="#kernel" class="go_to">kernel</a>,
+                    o qual é comumente utilizado em servidores, porém, vem ganhando cada vez mais espaço
+                    nos desktops. <br>
+                    &emsp;Neste site, serão apresentados pontos importantes para quem ainda
+                    não teve contato com essa tecnologia, informando detalhes gerais, contando um pouco
+                    de sua história e no final haverá um Quiz para descobrir qual distribuição Linux
+                    se encaixa melhor com o seu perfil. <br>
+                    &emsp;Além disso, caso acabe se apaixonando pelo assunto, 
+                    está disponível uma sessão de referências, a qual permite um acesso facilitado
+                    à conteúdos de qualidade sobre o assunto.
+                </p>
+            </section>
+            <div class="title flex_column_center">
+                <hr>
+                <h3>
+                    Por Que Usar Uma Distribuição Linux ?
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <ol>
+                    <li>Estabilidade</li>
+                    <li>Portabilidade</li>
+                    <li>Liberdade</li>
+                    <li>Diversas opções e configurações</li>
+                    <li>Geralmente valorizam mais a privacidade do usuário</li>
+                    <li>Preço (as "distros" Linux geralmente são gratuitas)</li>
+                    <li>Melhor performance em computadores antigos</li>
+                    <li>Geralmente oferecem uma melhor experiência para desenvolvedores</li>
+                    <li>Distribuições como Ubuntu e Fedora disponibilizam ótimas "lojas de aplicativo", facilitando a instalação de programas.</li>
+                    <li>Ambiente UNIX</li>
+                </ol>
+            </section>
+            <div class="title flex_column_center" id="kernel">
+                <hr>
+                <h3>
+                    O Que é um Kernel ? 
+                </h3>
+                <hr>
+            </div>
+            <section class="content">
+                <p>
+                    &emsp;Kernel é o núcleo de um sistema operacional, o qual gerencia os recursos do
+                    sistema e coordena os componentes. De forma simplificada, o Kernel é o "cérebro" 
+                    do sistema operacional. 
+                    Pelo fato de ser open source (ter seu código aberto),
+                    o Linux permite uma facilidade quanto à portabilidade,
+                    portanto, é encontrado em TVs Smart, microcomputadores e até
+                    celulares (o famoso Android utiliza o kernel Linux).
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!--- NAVIGATION MENU --->
+
+    <nav class="menu flex_column_center">
+        <ul class="routes_container">
+            <li class="routes">
+                <a class="block" href="./index.html">
+                    INÍCIO
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./routes/historia.html">
+                    HISTÓRIA
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./routes/quiz.html">
+                    QUIZ
+                </a>
+            </li>
+            <li class="routes">
+                <a class="block" href="./routes/referencias.html">
+                    REFERÊNCIAS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--- JAVASCRIPT --->
+
+    <script>
+
+        const date = new Date;
+
+        if (date.getDate() == 1) document.getElementById("titulo").innerHTML = "Ja mudou de distro este mês?";
+
+        function showMenu() {
+            let container = document.getElementsByClassName("container")[0];
+            let menu = document.getElementsByClassName("menu")[0];
+            container.classList.add("hide_container");
+            menu.classList.add("show_menu");
+        }
+
+    </script>
+</body>
+</html>
